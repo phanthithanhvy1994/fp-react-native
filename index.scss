@@ -1,0 +1,173 @@
+@import './style/variables.scss';
+
+// latin
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Roboto Light'), local('Roboto-Light'),
+    url(./assets/fonts/Roboto-Light.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'),
+    url(./assets/fonts/Roboto-Regular.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+    url(./assets/fonts/Roboto-Medium.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+    url(./assets/fonts/Roboto-Bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Roboto Black'), local('Roboto-Black'),
+    url(./assets/fonts/Roboto-Black.woff2) format('woff2');
+}
+
+:root {
+  --font-normal-color: #0e0e0e;
+  --font-explication-color: #333333;
+  --font-explication2-color: #636363;
+  --font-explication3-color: #787878;
+  --font-small-title-color: #272727;
+  --font-normal-color: #0e0e0e;
+  --main-color: 'DarkBlue';
+  --explication3-color: #838383;
+}
+
+body {
+  min-height: -moz-calc(100vh - 88px);
+  min-height: -webkit-calc(100vh - 88px);
+  min-height: calc(100vh - 88px);
+  margin: 0;
+  font-family: '-apple-system, BlinkMacSystemFont, Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px !important;
+  color: #0e0e0e !important;
+  background-color: #ffffff !important;
+}
+
+// Hiding Google Translate bar
+
+.main-body {
+  display: flex;
+  margin-bottom: 28px;
+}
+.header-margin {
+  margin-top: 44px;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.div-center {
+  display: table;
+  margin: 0 auto;
+}
+
+.link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.disabled-link {
+  pointer-events: none;
+  display: block;
+}
+
+.text-transform-none {
+  text-transform: none;
+}
+
+.capitalize-each-word {
+  text-transform: capitalize;
+}
+
+.main-page {
+  width: 100vw;
+  flex-grow: 1;
+  z-index: 0;
+  .container-fluid > .row {
+    display: block;
+  }
+}
+
+// material table
+.MuiTable-root thead {
+  tr {
+    th {
+      background: $sidebar;
+      color: $white-scream;
+    }
+  }
+}
+
+// even and odd columns on material table
+.even-odd-columns {
+  tr:nth-child(even) {
+    background: #fff;
+  }
+  tr:nth-child(odd) {
+    background: #f9f9f9;
+  }
+}
+
+fieldset {
+  border: 1px solid #a0a0a0;
+  box-sizing: border-box;
+}
+
+legend {
+  width: auto;
+}
+
+.MuiPickersDay-day.MuiPickersDay-daySelected,
+.MuiPickersDay-day.MuiPickersDay-daySelected:hover,
+.MuiToolbar-root.MuiPickersToolbar-toolbar {
+  background-color: $primary;
+}
+
+.MuiPickersYear-root.MuiPickersYear-yearSelected,
+.MuiPickersYear-root.MuiPickersYear-root:focus,
+.MuiPickersDay-day.MuiPickersDay-current,
+.MuiPickersMonth-root.MuiPickersMonth-monthSelected,
+.MuiPickersMonth-root.MuiPickersMonth-monthSelected:focus {
+  color: $primary;
+}
+
+.MuiPickersDay-day.MuiPickersDay-current.MuiPickersDay-daySelected {
+  color: $neutral;
+}
+
+button {
+  &:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+}

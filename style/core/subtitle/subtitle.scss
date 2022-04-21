@@ -1,0 +1,14 @@
+.subtitle {
+  width: 100%;
+  border-bottom: 4px solid;
+  font-size: 24px;
+  margin: 16px 0px;
+  border-image-slice: 1;
+  border-width: 4px;
+  border-image-source: linear-gradient(
+    90deg,
+    #fd7902 0%,
+    #6b6c99 55.21%,
+    #0d9499 100%
+  );
+}

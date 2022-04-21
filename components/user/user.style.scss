@@ -1,0 +1,14 @@
+.user-search-bar {
+  > div:nth-child(1) {
+    > div {
+      > div:nth-child(1) {
+        padding-left: unset;
+      }
+      > div {
+        height: 46px;
+        margin-top: 8px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

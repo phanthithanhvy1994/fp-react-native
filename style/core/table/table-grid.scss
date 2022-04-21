@@ -1,0 +1,74 @@
+@import '../../variables.scss';
+
+.table-grid {
+  .MuiPaper-elevation2 {
+    color: $blackText;
+    box-shadow: unset;
+  }
+  .MuiPaper-root {
+    .MuiTable-root {
+      border-collapse: unset;
+    }
+    .MuiToolbar-gutters {
+      padding: 0px;
+      min-height: unset;
+    }
+    .MuiToolbar-regular .MuiIconButton-root {
+      padding: 0px;
+    }
+    .MuiTableSortLabel-root {
+      color: $primary;
+    }
+    .MuiTable-root thead tr th {
+      background: $neutral;
+      color: $primary;
+      font-weight: bold;
+      border: unset !important;
+    }
+    .date-icon {
+      width: 95% !important;
+    }
+    .MuiCheckbox-colorSecondary.Mui-checked {
+      color: $secondary;
+    }
+    td,
+    th {
+      padding: 0.75rem;
+      border: unset !important;
+    }
+    td > div {
+      justify-content: center
+    };
+    tr:nth-child(even) {
+      background: $neutral;
+    }
+    tr:nth-child(odd) {
+      background: $background-footer;
+    }
+  }
+  .MuiIconButton-label svg.MuiSvgIcon-root {
+    width: 16px;
+    height: 16px;
+  }
+  .MuiAutocomplete-endAdornment .MuiIconButton-label svg.MuiSvgIcon-root {
+    width: 1em;
+    height: 1em;
+  }
+  .MuiIconButton-colorSecondary {
+    color: $secondary;
+    svg.MuiSvgIcon-root {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .MuiIconButton-colorSecondary:hover, .MuiIconButton-colorSecondary.Mui-checked:hover {
+    background-color: rgba(253, 121, 3, 0.08);
+  }
+
+  .pagination {
+    position: sticky;
+    bottom: 28px;
+    margin-bottom: 16px;
+    z-index: 1000;
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../../style/variables.scss';
+
+.po-sto {
+  img {
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid $primary;
+  }
+  &.mrp img {
+    border: 1px solid $secondary;
+  }
+}
+
+@media only screen and (max-width: 1367px) {
+  .main-page {
+      width: 95%;
+  }
+  .purchaseOrderCover .grid-large-content {
+    .MuiPaper-root > div {
+        max-width: 100%;
+    }
+    .MuiTable-root {
+        width: 1760px;
+    }
+  }
+}

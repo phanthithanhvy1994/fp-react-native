@@ -1,0 +1,4 @@
+export const RejectDialogAction = {
+  OPEN_REJECT_DIALOG: 'OPEN_REJECT_DIALOG',
+  CLOSE_REJECT_DIALOG: 'CLOSE_REJECT_DIALOG',
+};

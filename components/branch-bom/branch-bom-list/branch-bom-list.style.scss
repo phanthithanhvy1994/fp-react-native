@@ -1,0 +1,15 @@
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  .branch-bom-list {
+    .field-none-content:nth-of-type(2n + 2) {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1919px) {
+  .branch-bom-list {
+    .field-none-content:nth-of-type(3n + 2) {
+      display: none;
+    }
+  }
+}

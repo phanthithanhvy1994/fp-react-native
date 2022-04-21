@@ -1,0 +1,24 @@
+{
+  "status": "200",
+  "data": [
+    {
+      "roleId": 10,
+      "roleName": "Admin",
+      "description": "",
+      "note": "",
+      "roleItemList": [
+        {
+          "roleId": 10,
+          "operationId": 1
+        },
+        {
+          "roleId": 10,
+          "operationId": 2
+        }
+      ],
+      "deleteFlag": 0,
+      "updateDate": "20180112141847",
+      "channel": "0"
+    }
+  ]
+}

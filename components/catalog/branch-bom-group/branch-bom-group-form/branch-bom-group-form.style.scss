@@ -1,0 +1,17 @@
+@import '../../../../style/variables.scss';
+
+@media only screen and (max-width: 1367px) {
+  .main-page {
+    width: 95%;
+  }
+  .grid-large-content {
+    .MuiPaper-root > div {
+      max-width: 100%;
+    }
+    .MuiTable-root {
+      max-width: 1760px;
+      width: max-content;
+      min-width: 100%;
+    }
+  }
+}

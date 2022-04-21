@@ -1,0 +1,30 @@
+.search-icon-inside-input {
+  button {
+    outline: none;
+  }
+}
+
+.return-request-item-grid {
+  align-items: center;
+}
+
+.order-unit-to-base-unit-label {
+  color: #a0a0a0;
+  margin-bottom: 6px;
+}
+
+.order-unit-qty {
+  margin-bottom: 2px;
+}
+
+.base-unit-qty {
+  margin-bottom: 2px;
+}
+
+.qty-value {
+  > div {
+    > div {
+      margin: 12px 0 2px 0;
+    }
+  }
+}

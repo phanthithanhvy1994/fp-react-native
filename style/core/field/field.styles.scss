@@ -1,0 +1,22 @@
+@import '../../variables.scss';
+
+.date-icon .MuiSvgIcon-root {
+  fill: $primary;
+}
+
+.field-wrapper .btn-end-action {
+  background-color: $primary;
+  color: #ffffff;
+  width: 36px;
+  height: 36px;
+  margin-left: 5px;
+  margin-top: 14px;
+
+  &:hover {
+      opacity: 0.75;
+      background-color: $primary;
+  }
+  &:focus {
+      outline: none;
+  }
+}
